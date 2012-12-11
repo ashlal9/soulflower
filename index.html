@@ -1,0 +1,16 @@
+<head>
+<style type='text/css'>
+div {position:absolute;left:0px;top:0px;width:100%;height:100%;}
+</style>
+</head>
+<body>
+<div><canvas></canvas></div>
+<script type="text/Javascript">
+//get div to gain access to window size
+div=document.getElementsByTagName('div')[0]
+//set canvas size to the whole window 
+canvas=document.getElementsByTagName('canvas')[0]
+canvas.width=div.scrollWidth
+canvas.height=div.scrollHeight
+</script>
+</body>
